@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>uniStile</title>
+    <link rel="stylesheet" href="reg.css" />
+</head>
+<body>
+
+
+<div id="register-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>ЗАРЕГИСТРИРОВАТЬСЯ</h2>
+    <button class="google-btn"><img src="/icon/google.svg" alt="">Войти через Google</button>
+    <div class="or-divider">
+      <span class="line"></span>
+      <p>или</p>
+      <span class="line"></span></div>
+    <input type="email" id="email-input" placeholder="Введите email">
+    <input type="password" id="password-input" placeholder="Введите пароль">
+    <button class="confirm-btn" onclick="document.location='/index.html'">Подтвердить</button>
+    <div class="vxod">
+    <p>Уже есть аккаунт? <a href="#" id="login-link"><b>Войти</b></a></p></div>
+  </div>
+</div>
+<div id="login-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h2>Вход</h2>
+    <input type="email" id="login-email" placeholder="Введите email">
+    <input type="password" id="login-password" placeholder="Введите пароль">
+    <button class="confirm-btn"
+    onclick="document.location='/index.html'"
+    
+    
+    
+    >Войти</button>
+  </div>
+</div>
+
+
+<script src="reg.js"></script>   
+</body>
+</html>

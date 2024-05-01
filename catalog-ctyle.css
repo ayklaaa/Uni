@@ -1,0 +1,840 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Abhaya"), url("/AbhayaLibre-Bold.ttf ") format("woff2");
+
+  src: local("Montserrat"),
+    url("/Montserrat-VariableFont_wght.ttf ") format("woff2");
+}
+
+.swiper {
+  width: 1300px;
+  height: 700px;
+  padding: 53px 0px 0px 0px;
+}
+
+body {
+  margin: 0;
+  font-family: "Candara", "Montserrat", sans-serif;
+}
+
+#uniStile {
+  display: flex;
+  justify-content: center;
+  font-size: 48px;
+  font-family: "Abhaya";
+  font-weight: 600;
+}
+#header {
+  background-color: #3f3f3f;
+  color: white;
+  width: 100%;
+  padding: 15px 0px;
+  display: flex;
+  float: right;
+  list-style-type: none;
+  gap: 50px;
+  /* margin: 0px 120px; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-family: "Candara";
+  font-size: 24px;
+      top: 0;
+    position: sticky;
+    z-index: 999;
+}
+
+#header ul {
+  list-style: none;
+
+  display: flex; /* Располагаем элементы списка в ряд */
+  justify-content: space-evenly;
+  /* Равномерно распределяем элементы по ширине */
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.images {
+  margin: 0px 120px;
+  display: flex;
+  gap: 54px; /* Отступ справа от блока с картинками */
+}
+#header_icon {
+  padding: 15px 0;
+}
+#header img {
+  width: 34px;
+  height: 34px;
+  margin-right: 10px; /* Отступ справа от каждой картинки */
+}
+
+#images-container img {
+  width: 34px;
+  height: 34px;
+  margin: 0 10px;
+}
+#images-container {
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 0;
+  gap: 50px;
+  margin: 0px 120px;
+}
+
+#header ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#header li {
+  padding: 0 10px;
+}
+.seach {
+  display: flex;
+  justify-content: flex-end;
+  margin: -60px 10px 0px 0px;
+  padding: 15px;
+}
+
+/* style.css */
+
+/* ////// */
+.search-container {
+  width: 430px;
+  height: 38px;
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 0px 120px;
+}
+
+#search-input {
+  width: 100%;
+
+  padding: 11px;
+  border: none;
+}
+
+.search-icon {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.catalog {
+  display: flex;
+  gap: 54px;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0px 0px 26px 0px;
+}
+
+.product {
+  text-align: left;
+  padding: 15px 0px;
+}
+
+.product img {
+  margin-bottom: 0px;
+}
+h3 {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+.name_catalog {
+  display: flex;
+  padding: 0px 0px 0px 1px;
+  justify-content: flex-start;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0px 0px 0px 170px;
+}
+.footer {
+  display: flex;
+  gap: 0px;
+  background-color: #333333;
+  width: 100%;
+  height: 346px;
+  color: aliceblue;
+  justify-content: space-evenly;
+  padding: 84px 0px 0px 0px;
+  font-family: "Montserrat";
+}
+.footer h4 {
+  font-size: 20px;
+  color: #7d7d7d;
+}
+.footer p {
+  line-height: 35px;
+}
+.social-icons {
+  display: flex; /* Располагаем элементы в ряд */
+  justify-content: center; /* Центрируем элементы по горизонтали */
+  gap: 15px; /* Отступы между элементами */
+}
+
+.icon {
+  display: flex;
+  align-items: center; /* Центрируем иконку по вертикали */
+  justify-content: center; /* Центрируем иконку по горизонтали */
+  width: 35px;
+  height: 35px;
+  border-radius: 50%; /* Скругление углов */
+  background-color: #3f3f3f; /* Начальный цвет фона */
+
+  transition: background-color 0.3s ease; /* Плавное изменение цвета */
+}
+
+.icon:hover {
+  background-color: #1c1c1c; /* Цвет фона при наведении */
+}
+/* Стили для модального окна */
+.modal {
+  display: none; /* Скрываем по умолчанию */
+  position: absolute; /* Фиксируем относительно окна браузера */
+  z-index: 9999; /* Помещаем поверх других элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* Полупрозрачный черный фон */
+}
+
+.modal {
+  display: none; /* Скрываем по умолчанию */
+
+  z-index: 99; /* Помещаем поверх других элементов (опционально) */
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 190px 0px 0px 300px; /* Центрируем по вертикали и горизонтали */
+  padding: 20px;
+  color: aliceblue;
+
+  width: 500px; /* Ширина модального окна */
+  height: auto;
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+
+.column p:hover {
+  color: #7d7d7d;
+}
+
+.columns {
+  display: flex;
+  line-height: 1.5;
+  justify-content: space-between; /* Равномерное распределение столбцов */
+}
+
+.column {
+  flex: 1; /* Столбцы занимают равное пространство */
+  padding: 0 10px; /* Отступы между столбцами */
+}
+
+.modals {
+  display: none; /* Скрываем по умолчанию */
+  position: absolute; /* Фиксируем относительно окна браузера */
+  z-index: 9999; /* Помещаем поверх других элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contents {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 190px 0px 0px 500px; /* Центрируем по вертикали и горизонтали */
+  padding: 20px;
+  color: aliceblue;
+
+  width: 400px; /* Ширина модального окна */
+  height: auto;
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+
+.columns p:hover {
+  color: #7d7d7d;
+}
+.columnss {
+  display: flex;
+  line-height: 1.5;
+  gap: 90px;
+  justify-content: space-between; /* Равномерное распределение столбцов */
+}
+
+.columnq {
+  flex: 1; /* Столбцы занимают равное пространство */
+  padding: 0 10px; /* Отступы между столбцами */
+}
+
+.modalss {
+  display: none; /* Скрываем по умолчанию */
+  position: absolute; /* Фиксируем относительно окна браузера */
+  z-index: 9999; /* Помещаем поверх других элементов */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-contentss {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 190px 0px 0px 650px; /* Центрируем по вертикали и горизонтали */
+  padding: 20px;
+  color: aliceblue;
+
+  width: 400px; /* Ширина модального окна */
+  height: auto;
+  font-family: "Montserrat";
+  font-size: 17px;
+}
+
+.columnssq p:hover {
+  color: #7d7d7d;
+}
+.columnssq {
+  display: flex;
+  line-height: 1.5;
+  gap: 50px;
+  justify-content: space-between; /* Равномерное распределение столбцов */
+}
+
+.columnq {
+  flex: 1; /* Столбцы занимают равное пространство */
+  padding: 0 10px; /* Отступы между столбцами */
+}
+/* .next {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 58px;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+.next p {
+  letter-spacing: 10px;
+} */
+/* .product:hover {
+  position: relative;
+  opacity: 1;
+  transform: scale(1.1);
+} 
+
+.product-container {
+  width: 1200px;
+  height: 450px;
+  border: 2px solid black;
+  background-color: white;
+  display: flex;
+  width: 80%;
+  margin: 100px auto;
+  justify-content: center;
+  gap: 60px;
+}
+
+.product-image {
+  width: 320px;
+  height: 320px;
+  margin-top: 30px;
+  object-fit: contain; 
+}
+
+.product-info {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.product-title {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.product-quantity {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.promo-code {
+  display: flex;
+    position: absolute;
+    top: 57%;
+    left: 44.7%;
+    gap: 5px;
+}
+
+.promo-input {
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.promo-button {
+  padding: 10px 20px;
+  background-color: #3F3F3F;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat';
+}
+button {
+  border: 1px black;
+  outline: none;
+  background-color: #ffffff;
+  color: black;
+  font-size: 18px;
+}
+.price{
+  display: flex;
+  gap: 300px;
+    margin-top: 49px;
+    font-size: 40px;
+}
+ */
+ */
+
+
+
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+}
+.quantity-container{
+  display: flex;
+  gap: 20px;
+}
+.quantity-label {
+  margin: 0px;
+}
+
+.quantity-control {
+  
+  align-items: center;
+  position: relative; /* Для позиционирования кнопок + и - */
+}
+#quantity{
+  display: flex;
+}
+.arrow-down {
+  cursor: pointer;
+}
+
+.quantity-buttons {
+left: 5%;
+
+  
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.quantity-buttons button {
+  padding: 5px 10px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+ .price-container{
+  display: flex;
+  font-size: 48px;
+  margin: 100px 0px;
+  gap: 300px;
+ }
+ #price{
+  font-size: 54px;
+ }
+ .order{
+  background-color: #3F3F3F;
+  width: 338px;
+  height: 50px;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+    align-items: center;
+    top: 80%;
+    left: 59%;
+    position: absolute;
+    font-family: "Montserrat";
+    font-size: 20px;
+ }
+ .order:hover{
+  background-color: #C6A2FF;
+ }
+
+
+
+ .banner {
+  width: 1200px;
+  height: 450px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.collection-row {
+  display: flex;
+  width: 85%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.collection-block {
+  width: 50%;
+}
+
+/* .left-image img:first-child,
+.right-image img:last-child {
+  width: 618px;
+  height: 400px;
+} */
+
+/* .products {
+  display: flex;
+} */
+
+.product {
+  width: 50%;
+}
+
+.product img {
+  width: 277px;
+  height: 305px;
+}
+.col{
+  margin: 81px 0px 20px 150px;
+  font-size: 40px;
+  
+}
+.col h2{
+  margin: 0;
+  font-weight: 400;
+}
+.collection-block-left-image{
+  display: flex;
+  width: 618px;
+  height: 400px;
+      padding: 0px 20px 0px 0px;
+
+}
+.products{
+display: flex;
+gap: 30px;
+}
+.collection-block-right-image{
+display: flex;
+  width: 618px;
+  height: 400px;
+      padding: 20px 20px 0px 0px;
+}
+.info-or img{
+  height: 20px;
+  width: 20px;
+}
+.info-or{
+  display: flex ;
+      justify-content: space-between;
+}
+.banner img{
+  margin: 27px 0px ;
+}
+
+/* Mobile-first styles */
+ @media(max-width: 320px){ 
+body {
+  /* font-family: Arial, sans-serif;
+  background-color: #f1f1f1; */
+}}
+@media(max-width: 320px){ 
+
+#header {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}}
+
+
+
+@media(max-width: 320px){ 
+#header {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}}
+
+@media(max-width: 320px){ 
+
+#header.show {
+  left: 0;
+}}
+
+@media(max-width: 320px){ 
+#header ul {
+  list-style-type: none;
+  padding: 20px;
+}}
+
+@media(max-width: 320px){ 
+#header li {
+  margin-bottom: 10px;
+}}
+
+@media(max-width: 320px){ 
+#header a {
+  color: #fff;
+  width: 300%;
+        margin: 0 auto;
+        font-size: large;
+  text-decoration: none;}
+}
+@media(max-width: 320px){ 
+
+#header a:hover {
+  color: #C6A2FF;
+}}
+
+@media (max-width: 320px) {
+  #header {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+#open-modala{
+  font-size: large;
+}}
+@media (max-width: 320px) {
+.swiper{display: none;}}
+
+/* Reset some default styles */
+@media (max-width: 320px) {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-size: 13px;
+}}
+
+/* Mobile-first styles */
+
+
+@media (max-width: 320px) {
+header {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}}
+
+@media (max-width: 320px) {
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  top: 60px;
+  position: absolute;
+  left: 15px;
+}}
+.menu-icon{
+  /* display: none; */
+  display: table-column;
+}
+
+@media (max-width: 320px) {
+.menu-icon span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}}
+
+@media (max-width: 320px) {
+#header {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}}
+
+@media (max-width: 320px) {
+#header.show {
+  left: 0;
+   width: 250px;
+}}
+
+@media (max-width: 320px) {
+#header ul {
+  list-style-type: none;
+        padding: 20px;
+        display: flex;
+        gap: 30px;
+        position: absolute;
+        left: 10px;
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+        font-weight: 100;
+        align-items: center;
+}}
+
+@media (max-width: 320px) {
+#header li {
+  margin-bottom: 10px;
+}}
+
+@media (max-width: 320px) {
+#header a {
+  color: #fff;
+  text-decoration: none;
+}}
+
+@media (max-width: 320px) {
+#header a:hover {
+  color: #C6A2FF;
+}}
+@media (max-width: 320px) {
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}}
+
+.close-btn{
+       display: table-column;
+    position: absolute;
+    top: 60px;
+}
+ @media(max-width: 320px){ 
+  #register-btn{display: none;
+  }
+} 
+ @media(max-width: 320px){ 
+  .bag{position: absolute;
+        left: 95px;
+        top: 58px; }
+}
+ @media(max-width: 320px){ 
+  .footer{        
+  display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: auto;
+
+  }
+}
+ @media(max-width: 320px){ 
+.social-icons{        
+  display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-direction: row;
+    margin: 15px;
+  }
+}
+
+ @media(max-width: 320px){ 
+  .footer h4{
+  padding: 15px;
+  }
+}
+ @media(max-width: 320px){ 
+  .footer p{
+   padding: 15px;
+  }
+}
+
+ @media(max-width: 320px){ 
+  #search-input{
+    
+        border-top: 1px solid black;
+
+  }
+}
+ @media(max-width: 320px){ 
+  .search-container{
+      margin: 50px 0px 0px 0px;
+        width: 140px;
+        top: 9px;
+        position: absolute;
+        
+  }
+}
+ @media(max-width: 320px){ 
+  #header{display: none;}
+}
+ @media(max-width: 320px){ 
+  #uniStile{font-size: 20px;}
+}
+.seach {
+  display: flex;
+  justify-content: flex-end;
+  margin: -60px 10px 0px 0px;
+  padding: 15px;
+}
+@media(max-width: 320px){ 
+  .seach{
+        /* position: absolute;
+        top: 90px; */
+}}
+
+
+
+/* ////// */
+/* .search-container {
+  width: 430px;
+  height: 38px;
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  margin: 0px 120px 0px 0px;
+} */
+@media(max-width: 320px){ 
+  #notification-icon{
+   
+    margin: 0px;
+    position: absolute;
+    left: 40px;
+    top: 61px;
+  }
+}
+  
+#notification-icon{
+   border: none; outline: none;
+   background-color: #ffffff;
+}
+  
+#register-btn{
+   border: none; outline: none;
+   background-color: #ffffff;
+}

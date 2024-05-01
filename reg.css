@@ -1,0 +1,167 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+src: local("Abhaya"),
+
+      url("/AbhayaLibre-Bold.ttf ") format("woff2");
+
+  src: local("Montserrat"),
+      url("/Montserrat-VariableFont_wght.ttf ") format("woff2");
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+    /* margin: 15% auto; */
+    padding: 20px;
+    border: 1px solid #888;
+    /* width: 100%; */
+    height: 100%;
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.google-btn{
+    padding: 10px;
+    width: 293px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: "Montserrat";
+    /* font-size: 28px; */
+    margin: 0px 5px 5px 0px;
+    background-color: #ffffff;
+    position: relative;
+    left: -10px;
+}
+.google-btn img{
+  margin: 0px 10px;
+  width: 30px;
+  padding: 5px;
+}
+#email-input{
+  padding: 20px;
+  width: 250px;
+  margin: 0px 15px 5px 0px;
+  position: relative;
+    left: -10px;
+}
+#password-input{
+padding: 20px;
+  width: 250px;
+  margin: 0px 15px 5px 0px;
+  position: relative;
+    left: -10px;
+}
+.order-name h2{
+  margin: 0px 0px 10px;
+}
+.confirm-btn{
+      padding: 15px;
+    width: 293px;
+    margin: 10px 15px 5px 0px;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    font-family: "Montserrat";
+    font-size: 14px;
+    position: relative;
+    left: -10px;
+}
+.or-divider{
+    display: flex;
+  align-items: center; /* Выравнивание по вертикали */
+  text-align: center; /* Выравнивание текста по центру */
+  margin: 0px 0; /* Отступы сверху и снизу */
+
+}
+.or-divider p{
+  background-color: #ffffff;
+  width: 40px;
+  height: 20px;
+  display: flex;
+}
+.or-divider .line{
+  flex-grow: 1; /* Линии занимают всё доступное пространство */
+  height: 1px; /* Толщина линии */
+  background-color: #ccc; /* Цвет линии */
+  margin: 0 10px; /* Отступы от текста */
+}
+.vxod{
+  display: flex;
+  justify-content: center;
+}
+#login-email{
+  padding: 20px;
+  width: 250px;
+  margin: 0px 15px 5px 0px;
+  position: relative;
+    left: -10px;
+}
+#login-password{
+  padding: 20px;
+  width: 250px;
+  margin: 0px 15px 5px 0px;
+  position: relative;
+    left: -10px;
+}
+
+#register-btn{
+  border: none; outline: none; 
+  background-color: #ffffff;
+}
+.vhod{
+  color: #000;
+}
+.vxod p{
+  color: #000;
+  font-family: "Montserrat";
+}
+.or-divider p{
+  color: #000;
+}
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close-button h2{
+  color: #000;
+}
+h2{
+  color: #000;
+  font-size: larger;
+  font-family: "Montserrat";
+  padding: 15px 0px 0px 0px;
+}

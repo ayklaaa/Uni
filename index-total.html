@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-total.css" />
+</head>
+<body>
+    <div id="uniStile"onclick="document.location='index.html'">uniStile</div>
+    <!-- ///// -->
+    <div class="payment-container">
+    <div class="payment-info">
+      <div class="cards">
+        <img src="/icon/image 18.png" alt="Visa" class="card-image" data-card-type="visa">
+        <img src="/icon/image 20.png" alt="Mastercard" class="card-image" data-card-type="mastercard">
+        <img src="/icon/image 21.png" alt="Mir" class="card-image" data-card-type="mir">
+      </div>
+      <div id="card-details" style="display: none;">
+        <h1>Укажите данные карты</h1>
+        <input type="text" id="card-number" placeholder="Номер карты">
+        <input type="text" id="card-expiry" placeholder="MM/YY">
+        <input type="text" id="card-cvv" placeholder="CVV">
+      </div>
+      <div class="address">
+        <h1>Укажите адрес доставки</h1>
+        <input type="text" id="address" placeholder="Регион, город, улица, квартира ( Укажите адрес полностью)">
+      </div>
+<div class="delivery-method">
+    <h1>Укажите способ доставки</h1>
+<div class="form_radio_group">
+
+    <div class="form_radio_group">
+	<div class="form_radio_group-item">
+		<input id="radio-1" type="radio" name="radio" value="1" checked>
+		<label for="radio-1"><img src="/icon/aaaaaa.png" alt=""><p><p><p></p></p></p> Доставка</label>
+	</div>
+	<div class="form_radio_group-item">
+		<input id="delivery" type="radio" name="radio" value="2">
+		<label for="delivery"><img src="/icon/image 19.png"><p></p>Самовывоз</label>
+	</div>
+
+</div>
+    
+</div>
+<!--       
+        <label><input type="radio" name="delivery" value="delivery"><img src="/icon/Group 120.png" alt=""> Доставка</label>
+        <label><input type="radio" name="delivery" value="pickup"> <img src="/icon/image 19.png" alt="">Самовывоз</label> -->
+      </div>
+    </div>
+    <div class="payment-actions">
+      <div class="rect-pay"><button id="pay-button">Оплатить</button>
+      <div class="info-order-pay">
+        <h2>Ваш заказ</h2></div>
+      <div class="info-pay">
+        <p>Товары</p>
+        <p>4400 ₽</p></div>
+      <div class="info-pay">
+        <p>Скидка</p>
+        <p>400 ₽</p></div>
+      <div class="info-pay">
+        <p>Доставка</p>
+      <p>1000 ₽</p></div>
+              <div class="create-line"></div>
+        <div class="total-info">
+
+<h1>ИТОГО:</h1>
+<h1>5000 ₽</h1>
+
+  </div>
+  </div>
+
+  </div>
+  </div>
+
+  
+
+    <!-- /////// -->
+
+    
+    
+    
+    
+    
+    
+    <div class="footer">
+      <div class="info" onclick="document.location='index-admin.html'">
+        <img src="/icon/Group 119.svg" alt="" />
+        <div class="social-icons">
+          <a href="#" class="icon">
+            <i class><img src="/icon/Vector.svg" alt="" /></i>
+          </a>
+          <a href="#" class="icon">
+            <i class><img src="/icon/Youtube.svg" alt="" /></i>
+          </a>
+          <a href="#" class="icon">
+            <i class><img src="/icon/tg.svg" alt="" /></i>
+          </a>
+          <a href="#" class="icon">
+            <i class><img src="/icon/facebook.svg" alt="" /></i>
+          </a>
+        </div>
+      </div>
+      <div class="info">
+        <h4>МАГАЗИН</h4>
+        <p>
+          Коллекции <br />
+          SALE <br />Одежда <br />
+          Аксессуары <br />Подарочные сертификаты
+        </p>
+      </div>
+      <div class="info">
+        <h4>ИНФОРМАЦИЯ</h4>
+        <p>
+          Личный кабинет <br />
+          Для артистов <br />
+          Публичная оферта <br />
+          Обработка персональных данных<br />
+          Контакты
+        </p>
+      </div>
+      <div class="info">
+        <h4>ПОКУПАТЕЛЯМ</h4>
+        <p>
+          Доставка <br />
+          Оплата <br />
+        </p>
+      </div>
+    </div>
+
+
+    
+    <script src="scr-total.js"></script>
+</body>
+</html>

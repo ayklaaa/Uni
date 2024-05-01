@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Управление задачами</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div id="uniStile"onclick="document.location='index.html'">uniStile</div>
+  <div class="work">
+    <h2>Что нужно сделать?</h2></div>
+  <div class="actions">
+    <div class="action add" id="add-task">
+      <img src="/icon/plus.svg" alt="Добавить">
+      <span>Добавить</span>
+    </div>
+    <div class="action edit" id="edit-task">
+      <img src="/icon/Group 125.svg" alt="Изменить">
+      <span>Изменить</span>
+    </div>
+    <div class="action delete" id="delete-task">
+      <img src="/icon/delete.svg" alt="Удалить">
+      <span>Удалить</span>
+    </div>
+    <div class="action stats" id="show-stats">
+      <img src="/icon/Group 127.svg" alt="Статистика">
+      <span>Статистика</span>
+    </div>
+  </div>
+<div class="work">
+    <h2>Последние действия</h2></div>
+  <ul id="task-list"></ul>
+
+<!-- Модальное окно для добавления/изменения задачи -->
+<div class="modal" id="task-modal">
+  <div class="modal-content">
+    <span class="close-button">&times;</span>
+    <h3 id="modal-title">Добавить название</h3>
+    <input type="text" id="task-input" placeholder="Добавить название">
+    <input type="file" id="task-image" accept="image/*">
+    <button id="modal-save">Сохранить</button>
+  </div>
+</div>
+
+  <!-- Модальное окно для статистики -->
+  <div class="modal" id="stats-modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h3>Статистика</h3>
+      <p>Всего изменений: <span id="stats-count"></span></p>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>
