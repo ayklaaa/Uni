@@ -320,6 +320,14 @@ background-color: rgb(255, 255, 255);
 height: 100%;
 width: 100%;
 }
+.product h3{
+z-index: 99999;
+background-color: rgb(255, 255, 255);
+height: 100%;
+width: 100%;
+displey: none;
+font-size: 20px;
+}
 .product:hover{
     position: relative;
     opacity: 1;
