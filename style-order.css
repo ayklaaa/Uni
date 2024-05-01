@@ -325,7 +325,7 @@ z-index: 99999;
 background-color: rgb(255, 255, 255);
 height: 100%;
 width: 100%;
-display: none;
+display: block;
 font-size: 20px;
 }
 .product:hover{
