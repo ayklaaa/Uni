@@ -5,10 +5,10 @@
   font-weight: 400;
 src: local("Abhaya"),
 
-      url("/AbhayaLibre-Bold.ttf ") format("woff2");
+      url("./AbhayaLibre-Bold.ttf ") format("woff2");
 
   src: local("Montserrat"),
-      url("/Montserrat-VariableFont_wght.ttf ") format("woff2");
+      url("./Montserrat-VariableFont_wght.ttf ") format("woff2");
 }
 .actions {
   display: flex;
