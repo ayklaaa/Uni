@@ -119,7 +119,7 @@ confirmBtn.forEach((btn) => {
     ) {
       // Вход
       if (
-        loginEmailInput.value === "example@example.com" &&
+        loginEmailInput.value === "user@gmail.com" &&
         loginPasswordInput.value === "password"
       ) {
         alert("Вы вошли!");
