@@ -2,10 +2,10 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: local("Abhaya"), url("./AbhayaLibre-Bold.ttf ") format("woff2");
+  src: local("Abhaya"), url("/AbhayaLibre-Bold.ttf ") format("woff2");
 
   src: local("Montserrat"),
-    url("./Montserrat-VariableFont_wght.ttf ") format("woff2");
+    url("/Montserrat-VariableFont_wght.ttf ") format("woff2");
 }
 
 .swiper {
@@ -409,17 +409,15 @@ font-size: small;
 
 .promo-code {
   display: flex;
-    position: absolute;
-    top: 46%;
-    left: 44.7%;
+    /* position: absolute; */
+margin-top: 30px;
     gap: 5px;
 }
 @media (max-width: 320px) {
   .promo-code{
        font-size: small;
-        position: absolute;
-        top: 200px;
-        left: 115px;
+             margin: 10px 0px;  
+    
       
         height: 20px;
         display: flex;
@@ -536,12 +534,12 @@ left: 5%;
  .price-container{
   display: flex;
   font-size: 48px;
-  margin: 100px 0px;
+  margin: 30px 0px;
   gap: 300px;
  }
   @media(max-width: 320px){ 
   .price-container{
-position: absolute;
+margin: 10px 0px;
 
 
 
@@ -560,11 +558,31 @@ position: absolute;
   color: aliceblue;
   justify-content: center;
     align-items: center;
-    top: 64%;
-    left: 60%;
-    position: absolute;
+    /* top: 77%;
+    left: 59%;
+    position: absolute; */
     font-family: "Montserrat";
     font-size: 20px;
+ }
+  @media(max-width: 320px){ 
+      .order{
+  background-color: #3F3F3F;
+  width: 338px;
+  height: 50px;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+    align-items: center;
+    display: none;
+    /* top: 77%;
+    left: 59%;
+    position: absolute; */
+    font-family: "Montserrat";
+    font-size: 20px;
+ }}
+  .orders{
+
+    display: none;
  }
  .order:hover{
   background-color: #C6A2FF;
@@ -573,13 +591,26 @@ position: absolute;
   background-color: #C6A2FF;
  }
  @media(max-width: 320px){ 
-.order {
-                  margin: 0 auto;
+.orders {
+        margin: 0 auto;
         width: 80%;
+        /* position: absolute; */
+        margin-top: 420px;
         padding: 15px;
-        position: absolute;
-        left: 30px;
-        top: 70%;
+        /* left: 30px; */
+          background-color: #3F3F3F;
+  width: 338px;
+  height: 50px;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+    align-items: center;
+    /* top: 77%;
+    left: 59%;
+    position: absolute; */
+    font-family: "Montserrat";
+    font-size: 20px;
+
 }}
 @media (max-width: 320px) {
 .name_catalog {
